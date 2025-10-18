@@ -54,7 +54,7 @@ Follow these steps precisely to get the project running.
 First, clone the repository and install all dependencies from the root folder.
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+git clone https://github.com/Rounik-Nikz/nexus-vault.git
 cd ipfs-file-registry
 npm run install:all
 ```
@@ -80,8 +80,8 @@ Your IPFS node needs to accept requests from your frontend (a.k.a. CORS).
    ```json
    "HTTPHeaders": {
      "Access-Control-Allow-Origin": [
-       "[https://webui.ipfs.io](https://webui.ipfs.io)",
-       "[http://webui.ipfs.io.ipns.localhost:8080](http://webui.ipfs.io.ipns.localhost:8080)"
+       "https://webui.ipfs.io",
+       "http://webui.ipfs.io.ipns.localhost:8080"
      ]
    }
    ```
@@ -91,9 +91,10 @@ Your IPFS node needs to accept requests from your frontend (a.k.a. CORS).
    ```json
    "HTTPHeaders": {
      "Access-Control-Allow-Origin": [
-       "[https://webui.ipfs.io](https://webui.ipfs.io)",
-       "[http://webui.ipfs.io.ipns.localhost:8080](http://webui.ipfs.io.ipns.localhost:8080)",
-       "http://localhost:5173"
+       "https://webui.ipfs.io",
+       "http://webui.ipfs.io.ipns.localhost:8080",
+       "http://localhost:5173",
+       "*"
      ],
      "Access-Control-Allow-Methods": [
        "PUT",
@@ -103,7 +104,7 @@ Your IPFS node needs to accept requests from your frontend (a.k.a. CORS).
    }
    ```
 5. **Save** the file.
-6. Go back to the **Status** tab in IPFS Desktop and **Restart** your node.
+6. **Restart** your IPFS Desktop node.
 
 ### 4\. Deploy Smart Contract
 
@@ -219,4 +220,5 @@ Your application will be running at `http://localhost:5173`.
 |
 `-- package.json     # Root package to run both servers
 ```
+
 
