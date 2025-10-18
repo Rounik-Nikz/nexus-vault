@@ -130,7 +130,7 @@ Create a file named `.env` in the `backend/` folder and add the following. Take 
 
 ```env
 # URL from your Ganache instance
-RPC_URL="[http://127.0.0.1:7545](http://127.0.0.1:7545)"
+RPC_URL="http://127.0.0.1:7545"
 
 # The address you just copied from truffle migrate
 CONTRACT_ADDRESS="YOUR_DEPLOYED_CONTRACT_ADDRESS"
@@ -140,7 +140,7 @@ CONTRACT_ADDRESS="YOUR_DEPLOYED_CONTRACT_ADDRESS"
 OWNER_PRIVATE_KEY="YOUR_GANACHE_OWNER_ACCOUNT_PRIVATE_KEY"
 
 # IPFS API
-IPFS_API_URL="[http://127.0.0.1:5001](http://127.0.0.1:5001)"
+IPFS_API_URL="http://127.0.0.1:5001"
 
 # Server port
 PORT=3001
@@ -157,7 +157,7 @@ VITE_CONTRACT_ADDRESS="YOUR_DEPLOYED_CONTRACT_ADDRESS"
 VITE_BACKEND_API_URL="http://localhost:3001"
 
 # Your IPFS gateway (for download links)
-VITE_IPFS_GATEWAY_URL="[http://127.0.0.1:8080/ipfs/](http://127.0.0.1:8080/ipfs/)"
+VITE_IPFS_GATEWAY_URL="http://127.0.0.1:8080/ipfs/"
 ```
 
 ### 6\. Configure MetaMask
@@ -219,3 +219,4 @@ Your application will be running at `http://localhost:5173`.
 |
 `-- package.json     # Root package to run both servers
 ```
+
